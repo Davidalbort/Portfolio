@@ -10,7 +10,8 @@
     "test": "jest a",
     "test:watch": "jest --watch",
     "prepare": "husky install",
-    "prettier:check": "prettier --write"
+    "prettier:check": "prettier --write",
+    "eslint": "eslint"
   },
   "dependencies": {
     "@types/node": "20.5.1",
