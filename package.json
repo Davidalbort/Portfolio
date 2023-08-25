@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest a",
+    "test": "jest",
     "test:watch": "jest --watch",
     "prepare": "husky install",
     "prettier:check": "prettier --write",
