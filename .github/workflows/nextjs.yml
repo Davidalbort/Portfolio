@@ -94,7 +94,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          name: out
           path: ./out
   # Eslint job
   test:
@@ -111,7 +110,6 @@ jobs:
         run: npm ci
       - uses: actions/download-artifact@v3
         with:
-          name: out
           path: ./out
       - name: Run test
         run: npm run test
