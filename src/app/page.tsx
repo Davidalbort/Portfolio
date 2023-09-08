@@ -1,7 +1,12 @@
+import { Main } from '@/components/main/Main'
+import { Sidebar } from '@/components/sidebar/Sidebar'
+import '@/styles/pages/home.scss'
+
 export default function Home() {
   return (
-    <main>
-      <h1>Roger David Alba Ortega</h1>
-    </main>
+    <div className="home">
+      <Sidebar />
+      <Main />
+    </div>
   )
 }
