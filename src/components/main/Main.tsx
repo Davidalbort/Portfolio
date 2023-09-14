@@ -1,3 +1,4 @@
+import { ButtonShimmerLight } from '../button_shimmer_light/Button_shimmer_light'
 import { ImageHover3d } from '../image_hover_3d/ImageHover3d'
 import David from '@/../public/B-3x3.jpg'
 
@@ -41,6 +42,7 @@ export function Main() {
         quidem inventore voluptates quisquam voluptatem ipsam, quos quo cumque.
         Veniam, vel iusto.
       </p>
+      <ButtonShimmerLight />
     </main>
   )
 }

@@ -24,11 +24,6 @@ export default function Home() {
     >
       <Sidebar />
       <Main />
-      <button className="shimmer-button">
-        <div className="light">
-          <div>button</div>
-        </div>
-      </button>
     </div>
   )
 }

@@ -1,0 +1,85 @@
+$spread: 90deg;
+$width-button: 350px;
+
+.button {
+  background: black;
+  position: relative;
+  padding: 24px 0px;
+  font-size: 16px;
+  border: none;
+  overflow: hidden;
+  width: $width-button;
+  border-radius: 100px;
+  &:hover {
+    box-shadow: 0 0 40px 8px rgba(62, 61, 117, 0.7);
+    cursor: pointer;
+  }
+}
+
+.button__slider-container {
+  container-type: size;
+  position: absolute;
+  inset: 0;
+}
+
+.button__slider {
+  inset: 0;
+  aspect-ratio: 1;
+  height: -webkit-fill-available;
+  position: absolute;
+  animation: slider 1.5s ease-in-out infinite alternate;
+}
+
+.button__light {
+  inset: -100%;
+  position: absolute;
+  animation: rotateLight 3s infinite linear;
+  background: conic-gradient(
+    from calc(270deg - (($spread) * 0.5)),
+    transparent 0,
+    #fff ($spread),
+    transparent ($spread)
+  );
+}
+
+.button__hidden {
+  border-radius: inherit;
+  position: absolute;
+  inset: 0.2em;
+  background: radial-gradient(
+    ellipse 80% 50% at 50% 120%,
+    rgba(62, 61, 117),
+    rgba(18, 18, 38)
+  );
+}
+
+.button__name {
+  position: relative;
+  color: #fff;
+}
+@keyframes slider {
+  to {
+    transform: translate(calc($width-button - 100%), 0);
+  }
+}
+
+@keyframes rotateLight {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(90deg);
+  }
+  35% {
+    transform: rotate(90deg);
+  }
+  65% {
+    transform: rotate(270deg);
+  }
+  85% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
