@@ -1,7 +1,13 @@
 #home {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
-  column-gap: 128px;
-  padding: 0 clamp(12px, 4vw, 48px);
-  z-index: 9;
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 12px;
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    column-gap: 128px;
+    padding: 0 clamp(12px, 4vw, 48px);
+  }
 }
