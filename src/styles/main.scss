@@ -1,5 +1,6 @@
 @import './base/reset', './base/base';
 @import './abstracts/colors';
 @import './components/sidebar.scss', './components/image_hover_3d.scss',
-  './components/button_shimmer_light.scss';
+  './components/button_shimmer_light.scss', './components/navigation.scss',
+  './components/main.scss';
 @import './pages/home.scss';

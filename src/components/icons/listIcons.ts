@@ -6,8 +6,3 @@ const listIcons = {
 }
 
 export default listIcons
-
-export interface listIconsKeys {
-  gitHub: () => JSX.Element
-  linkedIn: () => JSX.Element
-}
