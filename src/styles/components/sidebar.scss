@@ -1,7 +1,64 @@
+@use '../abstracts/colors';
 .sidebar {
   @media screen and (min-width: 1024px) {
     position: sticky;
     top: 0;
-    height: 25vh;
+    height: 100vh;
+    padding: 4rem 0;
+    row-gap: 3rem;
+    justify-content: space-between;
   }
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 12px;
+
+  & > section {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 12px;
+  }
+}
+
+.sidebar__subtitle {
+  color: colors.$titles-primary;
+}
+
+.sidebar__skills {
+  color: colors.$text-primary;
+}
+
+.sidebar__list {
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  column-gap: 12px;
+  row-gap: 6px;
+}
+
+.sidebar__skill {
+  list-style: none;
+  color: colors.$text-primary;
+}
+
+.sidebar__skill:not(:last-child)::after {
+  content: '|';
+}
+
+.sidebar__item {
+  width: 3rem;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    .sidebar__link {
+      color: colors.$titles-primary;
+    }
+  }
+}
+
+.sidebar__link {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  color: colors.$text-primary;
 }

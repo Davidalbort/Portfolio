@@ -3,10 +3,13 @@
 html,
 body {
   background-color: colors.$background-primary;
-  margin: 0;
 }
 
 h1 {
   color: colors.$titles-primary;
-  font-size: clamp(font_size.$title-s, 5vw, font_size.$title-l);
+  font-size: clamp(font_size.$title-s, 2vw, font_size.$title-l);
+}
+h2 {
+  color: colors.$titles-primary;
+  font-size: clamp(font_size.$sub-title-s, 2vw, font_size.$sub-title-l);
 }

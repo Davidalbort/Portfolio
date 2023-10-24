@@ -1,0 +1,51 @@
+@use '../abstracts/colors';
+.navigation {
+  display: none;
+  @media (min-width: 1024px) {
+    display: inline;
+  }
+}
+
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 6px;
+  width: 10rem;
+}
+
+.navigation__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  &:hover {
+    .navigation__line {
+      width: 3rem;
+      background-color: colors.$titles-primary;
+    }
+    .navigation__name {
+      color: colors.$titles-primary;
+    }
+  }
+}
+
+.navigation__line {
+  width: 2rem;
+  height: 1px;
+  background-color: colors.$text-primary;
+  margin-right: 1rem;
+  transition: all 0.2s ease-in-out;
+  &--active {
+    width: 3rem;
+    background-color: colors.$titles-primary;
+  }
+}
+
+.navigation__name {
+  color: colors.$text-primary;
+  transition: all 0.2s ease-in-out;
+  &--active {
+    color: colors.$titles-primary;
+  }
+}
