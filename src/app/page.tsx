@@ -15,8 +15,8 @@ export default function Home() {
       id="home"
       onMouseMove={(event) => {
         const pageHome = infoPageHome
-        const { screenX, screenY } = event.nativeEvent
-        const styleLight = `radial-gradient(600px at ${screenX}px ${screenY}px, rgba(29, 78, 216, 0.15), transparent 80%)`
+        const { pageX, pageY } = event.nativeEvent
+        const styleLight = `radial-gradient(600px at ${pageX}px ${pageY}px, rgba(29, 78, 216, 0.15), transparent 80%)`
         if (pageHome) {
           pageHome.style.background = styleLight
         }
