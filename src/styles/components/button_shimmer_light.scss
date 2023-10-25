@@ -1,14 +1,15 @@
 $spread: 90deg;
-$width-button: 350px;
+$width-s-button: 320px;
+$width-l-button: 350px;
 
 .button {
-  background: black;
+  background: #e0b651;
   position: relative;
   padding: 24px 0px;
   font-size: 16px;
   border: none;
   overflow: hidden;
-  width: $width-button;
+  width: clamp($width-s-button, 2vw, $width-l-button);
   border-radius: 100px;
   &:hover {
     box-shadow: 0 0 40px 8px rgba(62, 61, 117, 0.7);
@@ -59,7 +60,7 @@ $width-button: 350px;
 }
 @keyframes slider {
   to {
-    transform: translate(calc($width-button - 100%), 0);
+    transform: translate(calc($width-l-button - 100%), 0);
   }
 }
 

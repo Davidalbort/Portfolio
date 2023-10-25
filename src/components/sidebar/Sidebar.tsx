@@ -6,7 +6,7 @@ import { Navigation } from '../navigation/Navigation'
 export function Sidebar() {
   const hardSkill = [
     'Engineer ',
-    'Front End Develope ',
+    'Front End Developer ',
     'React ',
     'Web Analytics ',
     'React Native ',
