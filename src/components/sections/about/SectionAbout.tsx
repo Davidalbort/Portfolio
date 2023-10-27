@@ -1,3 +1,4 @@
+import '@/styles/components/sectionAbout.scss'
 import { ImageHover3d } from '@/components/image_hover_3d/ImageHover3d'
 import David from '@/../public/B-3x3.jpg'
 export function SectionAbout() {
@@ -27,13 +28,15 @@ export function SectionAbout() {
     },
   ]
   return (
-    <section id="About">
+    <section id="About" className="about">
       <h2>About</h2>
-      <ImageHover3d
-        src={David}
-        width={250}
-        alt="Image presentation of David Alba Ortega"
-      />
+      <figure>
+        <ImageHover3d
+          src={David}
+          width={250}
+          alt="Image presentation of David Alba Ortega"
+        />
+      </figure>
       {information.map((info, index) => (
         <p key={index} dangerouslySetInnerHTML={{ __html: info.paragraph }}></p>
       ))}

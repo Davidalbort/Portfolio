@@ -1,0 +1,15 @@
+.about {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1rem;
+  @media (min-width: 1024px) {
+    h2 {
+      display: none;
+    }
+  }
+  & > figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

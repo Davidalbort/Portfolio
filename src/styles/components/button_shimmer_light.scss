@@ -1,17 +1,20 @@
+@use '../abstracts/colors';
 $spread: 90deg;
-$width-button: 350px;
+$width-s-button: 320px;
+$width-l-button: 350px;
 
 .button {
-  background: black;
+  background: colors.$background-button-shimmer;
   position: relative;
   padding: 24px 0px;
   font-size: 16px;
   border: none;
   overflow: hidden;
-  width: $width-button;
+  width: clamp($width-s-button, 2vw, $width-l-button);
   border-radius: 100px;
+  transition: all 0.2s ease-in-out;
   &:hover {
-    box-shadow: 0 0 40px 8px rgba(62, 61, 117, 0.7);
+    box-shadow: 0 0 10px 4px colors.$background-secondary;
     cursor: pointer;
   }
 }
@@ -59,7 +62,10 @@ $width-button: 350px;
 }
 @keyframes slider {
   to {
-    transform: translate(calc($width-button - 100%), 0);
+    transform: translate(
+      calc((($width-l-button + $width-s-button) / 2) - 100%),
+      0
+    );
   }
 }
 

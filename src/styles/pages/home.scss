@@ -1,13 +1,22 @@
 #home {
   width: 100%;
-  padding: 12px;
+  padding: 3rem 1.5rem;
   display: flex;
   flex-flow: column nowrap;
   row-gap: 12px;
+  @media (min-width: 768px) {
+    padding: 5rem 3rem;
+  }
   @media (min-width: 1024px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
-    column-gap: 128px;
-    padding: 0 clamp(12px, 4vw, 48px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    column-gap: 1rem;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(min(100%, 50%), 1fr));
+    padding: 0 5rem;
+  }
+  @media (min-width: 1280px) {
+    column-gap: 3rem;
   }
 }

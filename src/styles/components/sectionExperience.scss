@@ -1,0 +1,78 @@
+@use '../abstracts/colors';
+.experience {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1rem;
+  @media (min-width: 1024px) {
+    h2 {
+      display: none;
+    }
+  }
+  & h3 {
+    color: colors.$titles-primary;
+    transition: all 0.3s ease-in-out;
+  }
+  & h4,
+  span {
+    color: colors.$text-primary;
+  }
+  & .list__duties {
+    padding: 0.5rem 2rem;
+  }
+}
+
+.list {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 2rem;
+  padding: 0;
+}
+
+.list__item {
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  & a {
+    text-decoration: none;
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    padding: 0.5rem;
+  }
+  @media (min-width: 768px) {
+    & a {
+      flex-flow: row nowrap;
+    }
+  }
+  @media (min-width: 1024px) {
+    & a {
+    }
+    &:hover {
+      background-color: colors.$background-experience;
+      border-radius: 0.5rem;
+      h3 {
+        color: colors.$background-secondary;
+      }
+    }
+  }
+}
+
+.list__duties {
+  padding: 0.5rem 1.5rem;
+  & > li {
+    color: colors.$text-primary;
+  }
+}
+
+.list__skills {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+  & > li {
+    color: #80d47c;
+    background-color: rgba(45, 212, 191, 0.1);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+}

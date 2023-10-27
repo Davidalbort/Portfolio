@@ -1,6 +1,7 @@
 @use '../abstracts/colors';
 .sidebar {
   @media screen and (min-width: 1024px) {
+    max-width: 50%;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -10,7 +11,7 @@
   }
   display: flex;
   flex-flow: column nowrap;
-  row-gap: 12px;
+  row-gap: 1rem;
 
   & > section {
     display: flex;
@@ -52,7 +53,7 @@
   &:hover {
     transform: scale(1.1);
     .sidebar__link {
-      color: colors.$titles-primary;
+      color: colors.$background-secondary;
     }
   }
 }
