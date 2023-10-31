@@ -4,18 +4,23 @@ $width-s-button: 320px;
 $width-l-button: 350px;
 
 .button {
+  margin: 0 auto;
+  text-decoration: none;
   background: colors.$background-button-shimmer;
   position: relative;
-  padding: 24px 0px;
+  padding: 1rem 0px;
   font-size: 16px;
   border: none;
   overflow: hidden;
   width: clamp($width-s-button, 2vw, $width-l-button);
-  border-radius: 100px;
+  border-radius: 80px;
   transition: all 0.2s ease-in-out;
   &:hover {
-    box-shadow: 0 0 10px 4px colors.$background-secondary;
+    box-shadow: 0 0 10px 2px colors.$background-secondary;
     cursor: pointer;
+    .button__name {
+      color: colors.$background-secondary;
+    }
   }
 }
 
@@ -59,6 +64,8 @@ $width-l-button: 350px;
 .button__name {
   position: relative;
   color: #fff;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
 }
 @keyframes slider {
   to {
