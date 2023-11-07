@@ -9,7 +9,7 @@ export function SectionProject() {
       //give me a description of this project please
 
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis impedit ratione repudiandae rerum illo officiis nesciunt cum velit quidem inventore voluptates quisquam voluptatem ipsam, quos quo cumque. Veniam, vel iusto.',
+        'My portfolio website is a testament to my web development expertise, featuring a robust tech stack and best practices for an exceptional user experience. Powered by Next.js, it offers lightning-fast load times and seamless navigation. Styling is organized using SCSS with the BEM methodology, ensuring clean and maintainable code. The website adopts a mobile-first design, guaranteeing a responsive and consistent experience across devices. Engaging animations enhance user interaction and modern aesthetics.',
       technologies: ['HTML', 'SCSS/BEM', 'JavaScript'],
       link: 'https://davidalbort.github.io/portfolio/',
     },

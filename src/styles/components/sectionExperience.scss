@@ -41,6 +41,11 @@
     img {
       aspect-ratio: 1331/617;
     }
+    div {
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 0.5rem;
+    }
   }
   @media (min-width: 768px) {
     & a {
