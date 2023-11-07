@@ -1,5 +1,11 @@
 [![Deploy Next.js site to Pages](https://github.com/Davidalbort/portfolio/actions/workflows/nextjs.yml/badge.svg)](https://github.com/Davidalbort/portfolio/actions/workflows/nextjs.yml)
 
+# Introduction
+
+My portfolio website is a testament to my web development expertise, featuring a robust tech stack and best practices for an exceptional user experience. Powered by Next.js, it offers lightning-fast load times and seamless navigation. Styling is organized using SCSS with the BEM methodology, ensuring clean and maintainable code. The website adopts a mobile-first design, guaranteeing a responsive and consistent experience across devices. Engaging animations enhance user interaction and modern aesthetics.
+
+TypeScript strengthens code quality and error prevention. A GitHub Actions workflow automates continuous integration and deployment, encompassing linting, testing, and parallel deployment management. Explore my portfolio to discover projects, technical skills, and my passion for web development. The fusion of Next.js, SCSS with BEM, mobile-first design, animations, TypeScript, and GitHub Actions exemplifies my dedication to delivering high-quality web experiences. Feel free to reach out for potential collaborations or exciting 
+
 ## Getting Started
 
 First, run the development server:
