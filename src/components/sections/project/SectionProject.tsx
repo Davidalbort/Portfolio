@@ -1,4 +1,4 @@
-import '@/styles/components/SectionProject.scss'
+import '@/styles/components/sectionProject.scss'
 import Image from 'next/image'
 import Portfolio from '@/../public/portfolio.jpg'
 export function SectionProject() {
