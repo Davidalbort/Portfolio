@@ -6,8 +6,6 @@ export function SectionProject() {
     {
       name: 'Portfolio',
       image: Portfolio,
-      //give me a description of this project please
-
       description:
         'My portfolio website is a testament to my web development expertise, featuring a robust tech stack and best practices for an exceptional user experience. Powered by Next.js, it offers lightning-fast load times and seamless navigation. Styling is organized using SCSS with the BEM methodology, ensuring clean and maintainable code. The website adopts a mobile-first design, guaranteeing a responsive and consistent experience across devices. Engaging animations enhance user interaction and modern aesthetics.',
       technologies: ['HTML', 'SCSS/BEM', 'JavaScript'],
@@ -25,6 +23,7 @@ export function SectionProject() {
                 src={project.image}
                 alt={`Image portada of project ${project.name}`}
                 width={200}
+                priority={false}
               />
               <div>
                 <h3>{project.name}</h3>
